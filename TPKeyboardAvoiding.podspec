@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'TPKeyboardAvoiding'
-  s.version  = '2.0.2'
+  s.version  = '2.0.3'
   s.license  = {
     :type => 'Custom permissive license',
     :text => <<-LICENSE
@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
   s.summary  = 'Fork of Michael Tyson\'s TPKeyboardAvoiding'
   s.homepage = 'https://github.com/lmirosevic/TPKeyboardAvoiding'
   s.author   = { 'Luka Mirosevic' => 'luka@goonbee.com' }
-  s.source   = { :git => 'https://github.com/lmirosevic/TPKeyboardAvoiding.git', :tag => '2.0.2' }
+  s.source   = { :git => 'https://github.com/lmirosevic/TPKeyboardAvoiding.git', :tag => '2.0.3' }
 
   s.description = "This is a relatively universal, drop-in solution: UIScrollView and UITableView subclasses that handle everything." \
                     "When the keyboard is about to appear, the subclass will find the subview that's about to be edited, " \
                     "and adjust its frame and content offset to make sure that view is visible, with an animation to match the keyboard pop-up. "\
                     "When the keyboard disappears, it restores its prior size." 
 
-  s.source_files = 'TPKeyboardAvoiding/*.{h,m}'
+  s.source_files = '*.{h,m}'
   s.public_header_files = 'TPKeyboardAvoiding.h', 'TPKeyboardAvoidingScrollView.h', 'TPKeyboardAvoidingTableView.h'
   s.requires_arc = false
 end
