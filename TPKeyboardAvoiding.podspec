@@ -1,8 +1,5 @@
 Pod::Spec.new do |s|
   s.name     = 'TPKeyboardAvoiding'
-<<<<<<< HEAD
-  s.version  = '2.0.1'
-=======
   s.version  = '2.0.2'
   s.license  = {
     :type => 'Custom permissive license',
@@ -13,14 +10,10 @@ Pod::Spec.new do |s|
         michael@atastypixel.com
     LICENSE
   }
->>>>>>> c69c856... Fixed podspec
   s.platform = :ios
   s.summary  = 'Fork of Michael Tyson\'s TPKeyboardAvoiding'
   s.homepage = 'https://github.com/lmirosevic/TPKeyboardAvoiding'
   s.author   = { 'Luka Mirosevic' => 'luka@goonbee.com' }
-<<<<<<< HEAD
-  s.source   = { :git => 'https://github.com/lmirosevic/TPKeyboardAvoiding.git', :tag => '2.0.1' }
-=======
   s.source   = { :git => 'https://github.com/lmirosevic/TPKeyboardAvoiding.git', :tag => '2.0.2' }
 
   s.description = "This is a relatively universal, drop-in solution: UIScrollView and UITableView subclasses that handle everything." \
@@ -28,7 +21,6 @@ Pod::Spec.new do |s|
                     "and adjust its frame and content offset to make sure that view is visible, with an animation to match the keyboard pop-up. "\
                     "When the keyboard disappears, it restores its prior size." 
 
->>>>>>> c69c856... Fixed podspec
   s.source_files = 'TPKeyboardAvoiding/*.{h,m}'
   s.public_header_files = 'TPKeyboardAvoiding.h', 'TPKeyboardAvoidingScrollView.h', 'TPKeyboardAvoidingTableView.h'
   s.requires_arc = false
