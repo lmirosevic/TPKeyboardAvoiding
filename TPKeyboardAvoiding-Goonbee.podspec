@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'TPKeyboardAvoiding-Goonbee'
-  s.version  = '1.2.4'
+  s.version  = '1.2.4.1'
   s.license  = {
     :type => 'Custom permissive license',
     :text => <<-LICENSE
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/lmirosevic/TPKeyboardAvoiding'
   s.author   = { 'Luka Mirosevic' => 'luka@goonbee.com' }
   s.source   = { :git => 'https://github.com/lmirosevic/TPKeyboardAvoiding.git', :tag => "goonbee-#{s.version.to_s}" }
-  s.source_files = '*.{h,m}'
-  s.public_header_files = '*.h'
+  s.source_files = 'TPKeyboardAvoiding/*.{h,m}'
+  s.public_header_files = 'TPKeyboardAvoiding/*.h'
   s.requires_arc = false
 end

@@ -6,5 +6,7 @@
 //  Copyright (c) 2013 Goonbee. All rights reserved.
 //
 
+#import "TPKeyboardAvoidingCollectionView.h"
 #import "TPKeyboardAvoidingScrollView.h"
 #import "TPKeyboardAvoidingTableView.h"
+#import "UIScrollView+TPKeyboardAvoidingAdditions.h"
