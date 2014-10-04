@@ -99,14 +99,13 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         
         UITextField *textField = [[[UITextField alloc] initWithFrame:CGRectMake(0, 0, 150, 30)] autorelease];
-        textField.returnKeyType = UIReturnKeyDone;
         textField.borderStyle = UITextBorderStyleRoundedRect;
         cell.accessoryView = textField;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Order %d", indexPath.row];
-    ((UITextField*)cell.accessoryView).placeholder = [NSString stringWithFormat:@"%d bananas", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Order %d", (int)indexPath.row];
+    ((UITextField*)cell.accessoryView).placeholder = [NSString stringWithFormat:@"%d bananas", (int)indexPath.row];
     
     return cell;
 }
